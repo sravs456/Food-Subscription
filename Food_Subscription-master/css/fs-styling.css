@@ -1,0 +1,344 @@
+.main-container{
+    text-align: center; 
+    width: 100%;
+   overflow-x: hidden;
+}
+
+.head-container { 
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    background-image:url('../assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg');
+    background-size: cover;
+}
+
+.head-container::before {
+    content: "";
+    position: absolute;
+    display:flexbox;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.65);
+}
+
+.heading{
+    position: relative ;
+    color: rgb(255, 255, 255);
+    margin-left: 250px;
+    width: 310px;
+    padding-top: 150px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.heading1{
+    position: relative ;
+
+    color: #808080;
+}
+
+.reviews-container {
+    position: relative;
+}
+
+.reviews-container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3),rgb(0, 0, 0, 0.5)) , url(../assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg);
+    background-size:cover;
+    opacity: 30%;
+    z-index: -1;
+}
+.reviews-container{
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.navbar{
+    position: relative ;
+    color: white;
+    float: right;
+}
+.buttons{
+    position: relative ;
+    margin-left: 250px;
+}
+.b1{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-decoration:double;
+    background-color: #ff6200;
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+}
+.b2{
+    margin-bottom: 30px;
+    text-decoration:double;
+    background-color:transparent;
+    color: rgb(252, 96, 5);
+    padding: 7px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    border: 2px solid #ff6200;
+    
+}
+.nav{
+    list-style-type: none;
+}
+.nav li{
+    float: left;
+    margin-left: 12px;
+    margin-right: 12px;
+    
+}
+.nav li a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.features-container i{
+    color: #ff6200;
+    font-size: 50px;
+}
+.features{
+display:flex;
+}
+.feature-1, .feature-2, .feature-3{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    margin-right: 25px;
+    padding-top: 25px;
+    padding-left:12px;
+    padding-right:12px;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    margin-bottom:50px;
+}
+.reviews{
+    display:flex;
+    height:400px;
+    justify-content: space-evenly;
+}
+.pricing{
+    padding-top: 25px;
+    background-color: #f2f2f2;
+}
+.prices{
+    display:flex;
+    height:100vh;
+    justify-content: space-evenly;
+
+}
+.dollars{
+    color:#ff6200;
+}
+.dollar-font{
+    font-size: 35px;;
+}
+.basic, .premium, .gold{
+    box-shadow: 0 15px 18px 0 rgba(0, 0, 0, 0.01), 0 12px 25px 0 rgba(0, 0, 0, 0.1);
+    padding-top: 25px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom: 25px;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    margin-bottom:15px;
+    border:1px solid #838383;
+    border-radius: 25px;
+}
+.premium{
+    height:450px;
+    width:350px;
+}
+.basic, .gold{
+    height:360px;
+    margin-top: 25px;
+}
+
+.hungry-buttons{
+    margin-bottom: 50px;
+    margin-top: 38px;
+    text-decoration:double;
+    background-color: #ff6200;
+    color:white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+}
+.iamhungry{
+    margin-top:110px;
+
+}
+
+.review-1, .review-2, .review-3{
+    background-color: #f0ffff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    padding-top: 25px;
+    padding-left:15px;
+    padding-right:15px;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    margin-bottom:15px;
+}
+.stars{
+    color:#ff6200;
+    size: 35px;
+}
+
+.steps-container{
+    background-color: #f2f2f2;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.steps{
+    text-align: left;  
+    margin-top: 300px; 
+    font-size: 20px;
+}
+.steps-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h2{
+    font-size:35px;
+    color: #808080;
+}
+
+
+.step-1, .step-2, .step-3{
+    font-size: 30px;
+    border: 1px solid #ff6200;
+    border-radius: 30px;
+    padding: 3px 13px;
+    color: #ff6200;
+
+}
+
+.underline {
+    width: 80px; /* Adjust the width of the underline */
+    height: 1px; /* Adjust the height of the underline */
+    background-color: #ff6200; /* Adjust the color of the underline */
+    position: relative;
+    top: 50%; /* Position the underline vertically at the center of the page */
+    left: 50%; /* Position the underline horizontally at the center of the page */
+    margin-bottom: 50px;
+    transform: translate(-50%, -50%); /* Center the underline precisely */
+}
+.photo1{
+    border-radius: 78px;
+    width: 100px;
+}
+.photo2 {
+    border-radius: 78px;
+    width: 100px;
+    height: 27%;
+}
+.photo3 {
+    border-radius: 78px;
+    width: 100px;
+    height: 27%;
+}
+
+.contact-us-container{
+    display:flex;
+    justify-content: space-evenly;
+} 
+.image{
+width:500px;
+}  
+.form{
+
+    text-align: left;
+}
+.form label{
+    display: block;
+    margin-bottom:15px;
+}
+.form input  {
+    width:590px;
+    height:30px;
+}
+
+.name, .email, .text, .comment{
+    font-size:20px;
+    color:#808080;
+    margin-bottom:15px;
+}
+.check{
+    margin-top:25px;
+}
+.check input{
+    width:21px;
+    height:21px;
+    
+}
+.check button{
+ margin-left:50px;
+}
+.form button{
+    margin-left:250px;
+}
+#myDropdown{
+    width:600px;
+    height:30px;
+}
+
+.checkbox{
+    padding-top:12px;
+}
+.footer-container p{
+    text-align: center;
+    padding-bottom: 25px;
+}
+.footer-container{
+    background-color: #838383;
+    height:fit-content; 
+}
+.footer{
+   
+    display:flex;
+    justify-content: space-between;
+}
+.apps ul{
+    display:flex;
+}
+.apps a{
+    text-decoration: none;
+    color:#f2f2f2;
+}
+.apps li{
+    margin-left:12px;
+    margin-right:12px;
+    list-style-type: none;
+    
+    
+}
+.handles ul{
+    display:flex;
+}
+.handles a{
+    text-decoration: none;
+    color:#f2f2f2;
+}
+.handles li{
+    margin-left:12px;
+    margin-right:12px;
+    list-style-type: none;
+    
+    
+}
