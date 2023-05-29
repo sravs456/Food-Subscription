@@ -253,7 +253,10 @@ h2{
     width: 100px;
     height: 27%;
 }
-
+.contact{
+    background-color: black;
+    padding-top: 25px;
+}
 .contact-us-container{
     display:flex;
     justify-content: space-evenly;
@@ -300,6 +303,9 @@ width:500px;
 
 .checkbox{
     padding-top:12px;
+    color:#838383 ;
+    font-size: 20px;
+
 }
 .footer-container p{
     text-align: center;
