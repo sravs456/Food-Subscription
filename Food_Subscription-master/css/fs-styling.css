@@ -1,7 +1,7 @@
 .main-container{
     text-align: center; 
     width: 100%;
-   overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .head-container { 
@@ -22,7 +22,25 @@
     left: 0px;
     background-color: rgba(0,0,0,0.65);
 }
+.reviews-container {
+    position: relative;     
+}
 
+.reviews-container::before {
+    content: "";
+    position: absolute;
+    display: flexbox;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgb(103, 101, 101);
+    background-image: linear-gradient(rgba(91, 89, 89, 0),rgb(0, 0, 0)) , url(../assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg);
+    background-size:cover;
+    filter:brightness(100%);
+    opacity: 30%;
+    z-index: -1;
+}
 .heading{
     position: relative ;
     color: rgb(255, 255, 255);
@@ -34,26 +52,10 @@
 }
 .heading1{
     position: relative ;
-
     color: #808080;
 }
 
-.reviews-container {
-    position: relative;
-}
 
-.reviews-container::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-image: linear-gradient(rgb(0, 0, 0, 0.3),rgb(0, 0, 0, 0.5)) , url(../assets/images/foodiesfeed.com_pizza-ready-for-baking.jpg);
-    background-size:cover;
-    opacity: 30%;
-    z-index: -1;
-}
 .reviews-container{
     padding-top: 30px;
     padding-bottom: 100px;
@@ -110,7 +112,8 @@
     font-size: 50px;
 }
 .features{
-display:flex;
+    display:flex;
+    justify-content: space-evenly;
 }
 .feature-1, .feature-2, .feature-3{
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -165,7 +168,6 @@ display:flex;
     height:360px;
     margin-top: 25px;
 }
-
 .hungry-buttons{
     margin-bottom: 50px;
     margin-top: 38px;
@@ -181,7 +183,6 @@ display:flex;
     margin-top:110px;
 
 }
-
 .review-1, .review-2, .review-3{
     background-color: #f0ffff;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -197,6 +198,10 @@ display:flex;
     color:#ff6200;
     size: 35px;
 }
+/* .s-image{
+    width:100px;
+    height:100px;
+} */
 
 .steps-container{
     background-color: #f2f2f2;
@@ -218,8 +223,6 @@ h2{
     font-size:35px;
     color: #808080;
 }
-
-
 .step-1, .step-2, .step-3{
     font-size: 30px;
     border: 1px solid #ff6200;
@@ -228,7 +231,6 @@ h2{
     color: #ff6200;
 
 }
-
 .underline {
     width: 80px; /* Adjust the width of the underline */
     height: 1px; /* Adjust the height of the underline */
@@ -265,7 +267,6 @@ h2{
 width:500px;
 }  
 .form{
-
     text-align: left;
 }
 .form label{
@@ -287,8 +288,7 @@ width:500px;
 }
 .check input{
     width:21px;
-    height:21px;
-    
+    height:21px;   
 }
 .check button{
  margin-left:50px;
@@ -315,8 +315,7 @@ width:500px;
     background-color: #838383;
     height:fit-content; 
 }
-.footer{
-   
+.footer{  
     display:flex;
     justify-content: space-between;
 }
@@ -330,9 +329,7 @@ width:500px;
 .apps li{
     margin-left:12px;
     margin-right:12px;
-    list-style-type: none;
-    
-    
+    list-style-type: none;  
 }
 .handles ul{
     display:flex;
@@ -344,7 +341,5 @@ width:500px;
 .handles li{
     margin-left:12px;
     margin-right:12px;
-    list-style-type: none;
-    
-    
+    list-style-type: none;   
 }
